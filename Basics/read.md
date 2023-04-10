@@ -14,43 +14,18 @@
         JVM = provides a runtime environment.
 
 
+![App Screenshot](img1.png)
+## How Java Program Runs?
+![App Screenshot](img2.png)
 
+## javac command
+- The javac command in Java compiles a program 
+        
+        javac filename
 
-## Database Schema
+- The java command is used to execute Java bytecodes. It takes bytecode as input, executes it, and outputs the result.
 
-- ## Messages Table
-    - id (int)
-    - created_at (timestamp)
-    - userEmail (varchar)
-    - message Content (varchar)
-   
-
-
-
-
-
+        java filenname
 
 
 
-
-
-
-
-    
-## Built Using
-
-- React
-- Supabase
-- Chakra UI
-
-
-## Authentication
-User Authentication is taken care of by using supabase service by using email as auth provider.
-
-
-
-## Screenshots of Web App 
-![App Screenshot](assets/readme/ss1.png)
-![App Screenshot](assets/readme/ss2.png)
-![App Screenshot](assets/readme/ss3.png)
-![App Screenshot](assets/readme/ss4.png)
