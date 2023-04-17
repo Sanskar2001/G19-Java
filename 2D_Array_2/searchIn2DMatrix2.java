@@ -41,13 +41,13 @@ class searchIn2DMatrix2 {
 
         };
 
-        int target=300;
+        int target=30;
         boolean ans=search(arr, target);
 
         if(ans==true)
         System.out.println("element found");
         else
-        System.out.println("not found");
+        System.out.println("not");
 
 
 
