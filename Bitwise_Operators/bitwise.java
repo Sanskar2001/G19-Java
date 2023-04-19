@@ -32,6 +32,20 @@ public class bitwise {
         int mask=1<<(i-1);
         return n|mask;
     }
+    static int unSetIthBit(int n,int i)
+    {
+        int mask= ~(1<<(i-1));
+
+        return n & mask;
+    }
+
+    static void oddEven(int n)
+    {
+        if( (n&1)==1)
+        System.out.println("No is odd");
+        else
+        System.out.println("no is even");
+    }
     public static void main(String[] args) {
 
         int a=15;
@@ -53,6 +67,11 @@ public class bitwise {
         // 1110
 
         System.out.println(setIthBit(12, 2));
+
+        System.out.println(unSetIthBit(15, 3));
+
+
+        oddEven(12);
         
     }
     
