@@ -27,6 +27,11 @@ public class bitwise {
         System.out.print(getIthBit(n, i));
 
     }
+    static int setIthBit(int n,int i)
+    {
+        int mask=1<<(i-1);
+        return n|mask;
+    }
     public static void main(String[] args) {
 
         int a=15;
@@ -42,7 +47,12 @@ public class bitwise {
 
         // System.out.println(getTotalBits(a));
 
-        printInBinary(a);
+        // printInBinary(a);
+
+        // 1100
+        // 1110
+
+        System.out.println(setIthBit(12, 2));
         
     }
     
