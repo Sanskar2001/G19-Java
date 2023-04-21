@@ -5,6 +5,8 @@ class Engine
     int fuelEfficieny;
     int maxRpm;
     int currentRpm;
+    static String manufacturer="Honda";
+
 
     public Engine(boolean isEngineOn,int noOFPistons,
     int fuelEfficieny,int currentRpm,int maxRpm)
@@ -14,6 +16,7 @@ class Engine
         this.fuelEfficieny=fuelEfficieny;
         this.currentRpm=currentRpm;
         this.maxRpm=maxRpm;
+    
 
         System.out.println("Constructor called Engine Created");
     }
@@ -109,6 +112,14 @@ class Engine
     }
 
 
+    String getManufacturer()
+    {
+        return this.manufacturer;
+    }
 
+    void setManufacturer(String manufacturer)
+    {
+        this.manufacturer=manufacturer;
+    }
 
 }

@@ -3,11 +3,16 @@
 
     public static void main(String[] args) {
         
-        // Engine engine=new 
-        // Engine(false, 5, 10,
-        //  0, 5000);
+        Engine engine=new 
+        Engine(false, 5, 10,
+         0, 5000);
+
+         Engine engine2=new Engine(false,6,11,0,6000);
 
 
+         System.out.println(Engine.manufacturer);
+        //  System.out.println(engine.getManufacturer());
+        //  System.out.println(engine2.getManufacturer());
         
 
         //  Engine engine2=new Engine(false,4,0);
@@ -17,9 +22,9 @@
         //  System.out.println(engine2.getCurrentRpm());
 
 
-        Engine engine3=new Engine(false);
+        // Engine engine3=new Engine(false);
 
-        System.out.println(engine3.getIsEngineOn());
+        // System.out.println(engine3.getIsEngineOn());
 
 
         // System.out.println(engine.isEngineOn);
