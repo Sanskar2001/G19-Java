@@ -18,6 +18,31 @@ class Engine
         System.out.println("Constructor called Engine Created");
     }
 
+    public Engine(boolean isEngineOn,int noOFPistons,int currentRpm)
+    {
+        this.isEngineOn=isEngineOn;
+        this.noOFPistons=noOFPistons;
+        this.currentRpm=currentRpm;
+        System.out.println("Overloaded Constructor Called");
+    }
+
+    public Engine(boolean isEngineOn)
+    {
+        this.isEngineOn=isEngineOn;
+    }
+
+    void upgradeEngine(int noOFPistons)
+    {
+        this.noOFPistons=noOFPistons;
+    }
+
+    void upgradeEngine(int noOFPistons,int fuelEfficieny)
+    {
+        this.noOFPistons=noOFPistons;
+        this.fuelEfficieny=fuelEfficieny;
+    }
+
+    
     // void ignitionOn()
     // {
     //     this.isEngineOn=true;

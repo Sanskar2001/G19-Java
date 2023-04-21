@@ -3,7 +3,24 @@
 
     public static void main(String[] args) {
         
-        Engine engine=new Engine(false, 5, 10, 0, 5000);
+        // Engine engine=new 
+        // Engine(false, 5, 10,
+        //  0, 5000);
+
+
+        
+
+        //  Engine engine2=new Engine(false,4,0);
+
+        //  System.out.println(engine2.getIsEngineOn());
+        //  System.out.println(engine2.getNoOFPistons());
+        //  System.out.println(engine2.getCurrentRpm());
+
+
+        Engine engine3=new Engine(false);
+
+        System.out.println(engine3.getIsEngineOn());
+
 
         // System.out.println(engine.isEngineOn);
         // System.out.println(engine.fuelEfficieny);
@@ -22,16 +39,16 @@
 
 
 
-        engine.setIsEngineOn(true);
-        System.out.println(engine.getIsEngineOn());
-        engine.setIsEngineOn(false);
-        System.out.println(engine.getIsEngineOn());
+        // engine.setIsEngineOn(true);
+        // System.out.println(engine.getIsEngineOn());
+        // engine.setIsEngineOn(false);
+        // System.out.println(engine.getIsEngineOn());
 
 
-        System.out.println(engine.getCurrentRpm());
-        engine.accelerate();
-        System.out.println(engine.getCurrentRpm());
-        engine.accelerate();
-        System.out.println(engine.getCurrentRpm());
+        // System.out.println(engine.getCurrentRpm());
+        // engine.accelerate();
+        // System.out.println(engine.getCurrentRpm());
+        // engine.accelerate();
+        // System.out.println(engine.getCurrentRpm());
     }
 }
