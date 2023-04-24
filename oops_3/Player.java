@@ -1,11 +1,11 @@
 class Player {
     
-    int playerId;
-    int health;
-    Gun gun;
-    boolean helmet; // helmet increases hp by 50
-    boolean armour; // armour increases hp by 50
-    boolean isAlive; // to check whether player is active or down
+    private int playerId;
+    private int health;
+    private Gun gun;
+    private boolean helmet; // helmet increases hp by 50
+    private boolean armour; // armour increases hp by 50
+    private boolean isAlive; // to check whether player is active or down
 
 
     public Player(int playerId)

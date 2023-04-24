@@ -6,10 +6,10 @@ enum Gunname
 
 class Gun
 {
-    Gunname gunName;
-    float calibre;
-    private int ammo;
-    int damage;
+    private Gunname gunName;
+    private float calibre;
+    private  int ammo;
+    private int damage;
 
     public Gun(Gunname gunName,float calibre,int ammo,int damage)
     {
