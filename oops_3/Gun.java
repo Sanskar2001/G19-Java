@@ -1,6 +1,6 @@
 enum Gunname
 {
-    AKM,DP,M762,M416,AUG,SCARL
+    AKM,DP,M762,M416,AUG,SCARL,Pan
 }
 
 
