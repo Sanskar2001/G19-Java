@@ -24,4 +24,20 @@ class Player {
         this.helmet=false;
         this.armour=false;
     }
+
+    public Player(int playerId,Gun gun,boolean helmet,boolean armour)
+    {
+        this.playerId=playerId;
+        this.gun=gun;
+        this.armour=armour;
+        this.helmet=helmet;
+
+       this.health=100;
+
+       if(armour)
+       this.health+=50;
+
+       if(helmet)
+       this.health+=50;
+    }
 }
