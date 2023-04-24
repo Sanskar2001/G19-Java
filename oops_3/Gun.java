@@ -8,7 +8,7 @@ class Gun
 {
     Gunname gunName;
     float calibre;
-    int ammo;
+    private int ammo;
     int damage;
 
     public Gun(Gunname gunName,float calibre,int ammo,int damage)
@@ -70,5 +70,9 @@ class Gun
         this.damage=damage;
     }
 
+    void reload(int ammo)
+    {
+        this.ammo=ammo;
+    }
 
 }

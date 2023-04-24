@@ -57,4 +57,70 @@ class Player {
         if(p.isAlive==false)
         p.health=100;
     }
+
+    // getters
+    int getPlayerId()
+    {
+        return this.playerId;
+    }
+
+    int getHealth()
+    {
+        return this.health;
+    }
+
+    Gun getGun()
+    {
+        return this.gun;
+    }
+
+    boolean getHelmet()
+    {
+        return this.helmet;
+    }
+
+    boolean getArmour()
+    {
+        return this.armour;
+    }
+
+    boolean getIsAlive()
+    {
+        return this.isAlive;
+    }
+
+
+    // setters
+    void setPlayerId(int playerId)
+    {
+         this.playerId=playerId;
+    }
+
+    void setHealth(int health)
+    {
+         this.health=health;
+    }
+
+    void setGun(Gun gun)
+    {
+         this.gun=gun;
+    }
+
+    void setHelmet(boolean helmet)
+    {
+         this.helmet=helmet;
+    }
+
+    void setArmour(boolean armour)
+    {
+         this.armour=armour;
+    }
+
+    void getIsAlive(boolean isAlive)
+    {
+         this.isAlive=true;;
+    }
+
+
 }
+
