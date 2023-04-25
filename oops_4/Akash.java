@@ -18,6 +18,7 @@ class Akash extends Mukesh
 
     void workHard()
     {
+
         this.jio++;
         this.relianceTrends++;
         this.reliancePetroleum++;
