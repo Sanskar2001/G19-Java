@@ -7,6 +7,7 @@ class Mukesh extends Dhirubhai
 
     public Mukesh()
     {
+        super(10,10); // super is calling parent's constructor
         System.out.println("Mukesh Ambani is born");
         this.reliancePetroleum=0;
         relianceRetail=0;
