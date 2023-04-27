@@ -20,8 +20,9 @@ class roses
                         rose1=arr[s];
                         rose2=arr[e];
                         minDiff=rose2-rose1;
-                        e--;
+                      
                     }
+                    e--;
             }
 
             else if(arr[s]+arr[e]<target)
