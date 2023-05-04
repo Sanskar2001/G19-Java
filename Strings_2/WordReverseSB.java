@@ -1,20 +1,10 @@
-class WordReverse {
-    
-    static String reverseString(String str)
-    {
-        int n=str.length();
-        String ans="";
-        for(int i=n-1;i>=0;i--)
-        {
-            ans+=str.charAt(i);
-        }
-        return ans;
-    }
+public class WordReverseSB {
 
     static String reverseWords(String str)
     {
         int n=str.length();
-        String ans="";
+        // String ans="";
+        StringBuilder ans=new StringBuilder();
 
         int i=n-1;
 
@@ -27,17 +17,17 @@ class WordReverse {
                 i--;
             }
 
-            String word="";
+            StringBuilder word=new StringBuilder("");
 
             while (i>=0 && str.charAt(i)!=' ') {
-                word+=str.charAt(i);
+                word.append(str.charAt(i));
                 i--;
             }
 
-            ans+=reverseString(word);
+            ans.append(word.reverse());
 
             if(!word.isEmpty())
-            ans+=" ";
+            ans.append(" ");
 
 
         }
@@ -51,4 +41,5 @@ class WordReverse {
 
         System.out.println(reverseWords(str)+"*");
     }
+    
 }
