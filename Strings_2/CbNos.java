@@ -15,6 +15,9 @@ class CbNos
 
                 Long currNo=Long.valueOf(currSubstring);
                
+                if(isCbNo(currNo))
+                System.out.println(currNo);
+
 
                 if(isCbNo(currNo) && isValid(st, en, visited))
                 {
