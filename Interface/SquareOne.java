@@ -21,6 +21,13 @@ class SquareOne {
         dominos.hireStaff();
         dominos.fireStaff();
         dominos.sellPizzas();
+
+        McDRestaraunt mcDRestaraunt=new McDRestaraunt();
+        mcDRestaraunt.hireStaff();
+        mcDRestaraunt.bake();
+        mcDRestaraunt.sellBurgers();
+        mcDRestaraunt.sellPizzas();
+        mcDRestaraunt.fireStaff();
     }
     
 
