@@ -6,6 +6,11 @@ class Main {
 
         MyThread myThread=new MyThread("T2");
 
+        ThreadUsingRunnable threadUsingRunnable=new ThreadUsingRunnable();
+
+        Thread thread2=new Thread(threadUsingRunnable);
+        thread2.start();
+
         myThread.setName("Thread-2");
         myThread.setPriority(Thread.MAX_PRIORITY);
 
