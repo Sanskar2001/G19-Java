@@ -20,9 +20,30 @@ class Stack
         return false;
     }
 
-    void push(int ele)
+    void push(int ele) throws Exception
     {
-        
+        if(isFull())
+        {
+            // throw new Exception("Stack Overflow!!");
+            throw new StackOverflowException("Stack Overflow!!");
+        }
+
+        top++;
+        arr[top]=ele;
+    }
+
+    int pop()
+    {
+        return arr[top--];
+    }
+
+
+    boolean isFull()
+    {
+        if(top==capacity-1)
+        return true;
+
+        return false;
     }
 
 }
