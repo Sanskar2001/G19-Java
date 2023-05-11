@@ -32,8 +32,10 @@ class Stack
         arr[top]=ele;
     }
 
-    int pop()
+    int pop() throws StackEmptyException
     {
+        if(isEmpty())
+        throw new StackEmptyException();
         return arr[top--];
     }
 
@@ -46,4 +48,5 @@ class Stack
         return false;
     }
 
+  
 }
