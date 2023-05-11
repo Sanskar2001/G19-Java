@@ -11,6 +11,8 @@ class Main {
         Thread thread2=new Thread(threadUsingRunnable);
         thread2.start();
 
+        System.out.println(thread2.isAlive());
+
         myThread.setName("Thread-2");
         myThread.setPriority(Thread.MAX_PRIORITY);
 
