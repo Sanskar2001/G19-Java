@@ -1,8 +1,8 @@
-class StackOverflowException  extends Exception
+class StackOverflowException extends Exception
 {
-    
-        public StackOverflowException(String str)
-        {
+    public StackOverflowException()
+    {
             super("Stack Overflow!!");
-        }
+    }
+       
 }

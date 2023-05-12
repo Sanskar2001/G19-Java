@@ -14,18 +14,18 @@ class Stack
 
     boolean isEmpty()
     {
-        if (top==-1) 
+        if(top==-1)
         return true;
 
         return false;
     }
 
-    void push(int ele) throws Exception
+    void push(int ele) throws StackOverflowException
     {
         if(isFull())
         {
-            // throw new Exception("Stack Overflow!!");
-            throw new StackOverflowException("Stack Overflow!!");
+            // throw new Exception("Stack Overflow");
+            throw new StackOverflowException();
         }
 
         top++;
@@ -34,18 +34,35 @@ class Stack
 
     int pop() throws StackEmptyException
     {
-        if(isEmpty())
-        throw new StackEmptyException();
+        if(top == -1)
+        {
+            throw new StackEmptyException();
+        }
         return arr[top--];
+    }
+
+    int peek() throws StackEmptyException
+    {
+        if(top==-1)
+        throw new StackEmptyException();
+
+        return arr[top];
     }
 
 
     boolean isFull()
     {
+     
         if(top==capacity-1)
         return true;
 
         return false;
+    }
+
+    void display()
+    {
+        for(int i=top;i>=0;i--)
+        System.out.println(arr[i]);
     }
 
   
