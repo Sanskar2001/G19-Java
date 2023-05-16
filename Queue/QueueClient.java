@@ -17,6 +17,27 @@ public static void main(String[] args) {
     //    System.out.println(e);
     // }
 
+
+    CircularQueue circularQueue=new CircularQueue(4);
+
+    try{
+        circularQueue.enQueue(10);
+        circularQueue.enQueue(20);
+        circularQueue.enQueue(30);
+        circularQueue.enQueue(40);
+
+        circularQueue.deQueue();
+        circularQueue.enQueue(50);
+        circularQueue.display();
+    }
+    catch (Exception e)
+    {
+        System.out.println(e);
+    }
+   
+
+
+
     
        
 

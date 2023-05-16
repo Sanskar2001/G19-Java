@@ -47,11 +47,22 @@ class CircularQueue {
 
         int deletedElement=arr[front];
         front++;
+        size--;
 
         if(front==arr.length)
         front=0;
 
         return deletedElement;
+    }
+
+
+    void display()
+    {
+        for(int i=0;i<size;i++)
+        {
+            int idx=(front+i)%arr.length;
+            System.out.println(arr[idx]);
+        }
     }
 
     
