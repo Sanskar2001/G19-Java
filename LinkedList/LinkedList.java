@@ -76,4 +76,44 @@ class LinkedList
 
     }
 
+    void insertionAtTail(int data)
+    {
+        if(head==null)
+        {
+            head=new Node(data);
+            return;
+        }
+
+        Node tmp=head;
+        while (tmp.next!=null) {
+            tmp=tmp.next;
+        }
+
+        Node newNode=new Node(data);
+        tmp.next=newNode;
+    }
+
+
+
+    void display()
+    {
+        Node tmp=head;
+
+        while (tmp!=null) {
+            System.out.println(tmp.data);
+            tmp=tmp.next;
+            
+        }
+    }
+
+    int getKthNode(int k)
+    {
+        Node tmp=head;
+
+        for(int i=1;i<=k;i++)
+        tmp=tmp.next;
+
+        return tmp.data;
+    }
+
 }
