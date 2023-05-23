@@ -37,7 +37,6 @@ class LinkedList
 
     void insertionAtKthPosition(int data,int k)
     {
-
         if(k==0)
         {
             insertionAtHead(data);
@@ -114,6 +113,20 @@ class LinkedList
         tmp=tmp.next;
 
         return tmp.data;
+    }
+
+    int getLength()
+    {
+        int cnt=0;
+        
+        Node tmp=head;
+        while (tmp!=null) 
+        {
+            tmp=tmp.next;
+            cnt++;  
+        }
+
+        return cnt;
     }
 
 }

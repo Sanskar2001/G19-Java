@@ -44,18 +44,20 @@ public class StackClient {
 
             
         // }
-        st2.display();
+        // st2.display();
 
 
 
 
 
-        // DynamicStack dynamicStack=new DynamicStack(2);
-        // dynamicStack.push(1);
-        // dynamicStack.push(2);
-        // dynamicStack.push(3);
-        // dynamicStack.push(4);
-        // dynamicStack.push(5);
+        DynamicStack dynamicStack=new DynamicStack(2);
+        dynamicStack.push(1);
+        dynamicStack.push(2);
+        dynamicStack.push(3);
+        dynamicStack.push(4);
+        dynamicStack.push(5);
+
+        dynamicStack.display();
 
     
         
