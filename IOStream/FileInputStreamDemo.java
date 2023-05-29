@@ -17,12 +17,12 @@ class FileInputStreamDemo
             //     System.out.print((char)x);
             //     x=fis.read();
             // }
-
-
             byte[] arr=new byte[fis.available()];
             fis.read(arr);
             String str=new String(arr);
             System.out.println(str);
+
+            fis.close();
 
 
         } catch (Exception e) {
